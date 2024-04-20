@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Smooth Scroll",
+  "description": "Improve the scrolling experience with your keyboard. Scroll half a page with the Space key on any website, and use Escape key to un-focus active elements on a webpage.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": { 
+    "default_icon": "images/icon-32.png"
+  }
+}
